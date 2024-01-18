@@ -14,3 +14,13 @@
 7. 메세지 적지 않고 한번 더 Create pull request클릭
 8. Merge pull request 클릭
 9. Confirm merge 클릭
+
+# 깃 버전 되돌리기
+- HEAD가 가리키는 곳으로 부터 한 버전 되돌리기
+```
+git reset --hard HEAD~1 
+``` 
+- 잘못했을 경우 다시 되돌리기
+```
+git reset --hard ORIG_HEAD
+```
