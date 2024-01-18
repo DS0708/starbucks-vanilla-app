@@ -24,3 +24,25 @@ git reset --hard HEAD~1
 ```
 git reset --hard ORIG_HEAD
 ```
+
+# 깃 원하는 브랜치 clone 하기
+1. git clone
+2. git branch -r 로 원격저장소 브랜치 확인하기
+3. git checkout -t origin/purple 와 같이 purple branch를 가져오기
+
+# 브랜치 삭제하기
+1. 지울 브랜치 말고 다른 브랜치로 변경 git checkout main 등
+2. git branch -d purple 로 지우기
+
+# 브랜치 생성후 이동하는 것 한번에 하기
+- yellow라는 브랜치 만들고 한번에 전환하기
+```
+git checkout -b yellow
+```
+
+# 충돌 해결하기
+- 두 원격 저장소에서 동일한 부분을 고쳤을 때 한쪽이 Push하고 다른 한쪽이 push하려고 하면 충돌 발생
+- 해결방안 
+  1. git pull 을 통해 코드를 비교하여 적절히 고친다.
+  2. git push origin main
+  3. 또는 git reset --hard HEAD~1 후 git pull origin main
