@@ -1,3 +1,2 @@
-# starbucks-vanilla-app
+# [starbucks-vanilla-app](https://brilliant-mandazi-be9aae.netlify.app/)
 
-[링크](https://brilliant-mandazi-be9aae.netlify.app/)
